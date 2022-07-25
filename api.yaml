@@ -3,10 +3,6 @@ kind: API
 metadata:
   name: demo-tap
   description: The demo API for Tanzu Application Platform GUI
-  links:
-    - url: http://tanzu-java-web-app.dev.alex.local
-      title: API Definition
-      icon: docs
 spec:
   type: openapi
   lifecycle: experimental
