@@ -4,7 +4,7 @@ metadata:
   name: demo-tap
   description: The demo API for Tanzu Application Platform GUI
   links:
-    - url: tanzu-java-web-app.dev.alex.local
+    - url: http://tanzu-java-web-app.dev.alex.local
       title: API Definition
       icon: docs
 spec:
@@ -18,7 +18,7 @@ spec:
       title: OpenAPI definition
       version: v0
     servers:
-    - url: http://localhost:8080
+    - url: http://tanzu-java-web-app.dev.alex.local
       description: Generated server url
     paths:
       "/demo-tap":
