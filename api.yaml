@@ -4,7 +4,7 @@ metadata:
   name: demo-tap
   description: The demo API for Tanzu Application Platform GUI
   links:
-    - url: http://localhost:8080/swagger-ui/index.html
+    - url: tanzu-java-web-app.dev.alex.local
       title: API Definition
       icon: docs
 spec:
