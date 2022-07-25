@@ -4,11 +4,9 @@ metadata:
   name: demo-tap
   description: Tanzu Java Web App
   tags:
-    - app-accelerator
-    - java
-    - spring
-    - web
-    - tanzu
+    - sdp
+    - Java
+    - Spring
   annotations:
     'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=tanzu-java-web-app'
 spec:
@@ -16,5 +14,5 @@ spec:
   lifecycle: experimental
   owner: sdp-devs
   providesApis: # list of APIs provided by the Component
-    - example-api-1
+    - demo-tap
 
