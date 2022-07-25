@@ -1,7 +1,7 @@
 SOURCE_IMAGE = os.getenv("SOURCE_IMAGE", default='dev.local/tanzu-java-web-app-source')
 LOCAL_PATH = os.getenv("LOCAL_PATH", default='.')
-NAMESPACE = os.getenv("NAMESPACE", default='default')
-
+NAMESPACE = os.getenv("NAMESPACE", default='dev')
+allow_k8s_contexts('gke_velvety-broker-357412_europe-west8-a_demo-tap')
 k8s_custom_deploy(
     'tanzu-java-web-app',
     apply_cmd="tanzu apps workload apply -f config/workload.yaml --live-update" +

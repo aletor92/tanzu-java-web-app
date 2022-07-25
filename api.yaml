@@ -1,0 +1,48 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: demo-tap
+  description: The demo API for Tanzu Application Platform GUI
+  links:
+    - url: http://localhost:8080/swagger-ui/index.html
+      title: API Definition
+      icon: docs
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: demo-team
+  system: demo-app # Or specify system name of your choice
+  definition: |
+    openapi: 3.0.1
+    info:
+      title: OpenAPI definition
+      version: v0
+    servers:
+    - url: http://localhost:8080
+      description: Generated server url
+    paths:
+      "/demo-tap":
+        post:
+          tags:
+          - hello-controller
+          operationId: demoTap
+          responses:
+            '200':
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    type: string
+      "/":
+        get:
+          tags:
+          - hello-controller
+          operationId: index
+          responses:
+            '200':
+              description: OK
+              content:
+                "*/*":
+                  schema:
+                    type: string
+    components: {}      
