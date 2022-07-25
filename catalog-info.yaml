@@ -12,6 +12,9 @@ metadata:
   annotations:
     'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=tanzu-java-web-app'
 spec:
-  type: service
+  type: Informativa
   lifecycle: experimental
-  owner: default-team
+  owner: sdp-devs
+  providesApis: # list of APIs provided by the Component
+    - example-api-1
+
